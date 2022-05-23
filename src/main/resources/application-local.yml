@@ -1,0 +1,5 @@
+# 以logging.config配置的日志优先级最高，其次才是类路径下的logback.groovy、 logback-test.xml、logback.xml
+logging:
+  config: classpath:logback-local.xml
+server:
+  port: 8081
