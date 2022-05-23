@@ -103,8 +103,8 @@
         <appender-ref ref="file_error"/>
     </root>
 
-    <!-- logger用于指定系统模块某个包或者类，并将指定级别下的日志传递给ROOT标签处理。additivity表示是否将日志传递给root，默认是true-->
-    <!--当前包及其子包下面的所有使用到的Logger都是使用的当前logger-->
+    <!-- logger用于指定系统模块某个包或者类，并将指定级别下的日志传递给root Logger处理。additivity表示是否将日志传递给root，默认是true-->
+    <!--当前包及其子包下面的所有使用到的Logger都是使用的当前logger，都会将debug及其以上级别的日志传递给root Logger进行处理-->
     <logger name="com.abucloud.logbackdemo" level="debug" additivity="true"/>
     <!--如果需要打印SQL,可以把下面的级别设置为DEBUG -->
     <!--<logger name="com.heeexy.example.dao" level="DEBUG"/>-->
